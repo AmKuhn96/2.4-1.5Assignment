@@ -1,0 +1,388 @@
+/* Adrianne Kuhn */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
+
+}
+
+
+
+h1, h2, h3 {
+    font-family: "Molle", cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: x-large;
+
+}
+
+h4, p, q, small, nav, button, form {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient( #55BCD5, #FFFFFF);
+
+}
+
+
+#img-grid {
+    display: grid;
+    gap: 2rem;
+ 
+}
+
+/* #plan {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: #F6D64A;
+    padding-top: 10px;
+}
+
+#plan section {
+    background-color: #55BCD5;
+    padding: 15px;
+    border: solid 4px white;
+    border-radius: 5%;
+    
+} */
+
+#plan div {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #F6D64A;
+    padding: 10px;
+    margin: 10px 20px;
+}   
+
+
+#plan section {
+    border-radius: 5%;
+    border: solid 4px white;
+    text-align: center;
+    background-color: #55BCD5;
+    margin: 10px;
+
+}
+
+#plan img {
+    text-align: center;
+    padding: 10px;
+}
+
+#plan section h4 {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+#skip a {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+
+}
+ 
+#skip a:focus {
+    position:static;
+    width:auto;
+    height:auto;
+
+}
+
+
+#testimonials div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin: 10px 10px;
+}
+
+#testimonials section {
+    text-align: center;
+    padding: 10px;
+}
+
+#testimonials section h4 {
+    font-weight: bold;
+    color: #000000;
+    font-size: x-large;
+    padding-top: 4px;
+}
+
+#testimonials section p {
+    padding: 10px
+}
+
+nav {
+    padding: 10px;
+
+}
+
+#menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    color: #fff;
+    
+ 
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    padding: 15px;
+    margin: 10px;
+}
+
+li a:hover {
+    color: #000000;
+    background-color: #F6D64A;
+}
+
+li a:active {
+    color: white;
+    background-color: #222222;
+}
+
+#about div {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    background-color: #499BD2;
+    padding-top: 10px;
+    
+}
+
+#about section {
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    
+}
+
+#about section h4 {
+    font-weight: bold;
+    font-size: large;
+    padding: 5px;
+}
+
+#contact {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h3 {
+    padding-bottom: 10px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#names input, select {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #9B26B0;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #000000;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.custom-select {
+    position: relative;
+    width: 100%;
+}
+
+
+.focus {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #9B26B0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-select select:focus + .focus {
+    visibility: visible;
+    transform: scaleX(1);
+    color: #9B26B0;
+}
+
+input[type="submit"] {
+    background-color: #9B26B0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    label {
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    #toggle:checked + label + ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;
+    }
+
+    #toggle:checked + label {
+        background-color: #555;
+    }
+
+    #toggle:not(:checked) + label + ul {
+        display: none;
+    }
+
+    #toggle:checked + label + ul {
+        order: 2;
+    }
+    #plan div {
+        grid-template-columns: 1fr;
+    }
+}
